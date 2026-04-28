@@ -181,6 +181,31 @@
           ]
         }
       ]
-    }
+    },
+	{
+	  "name": "Literatur & Klassiker",
+	  "slug": "literature",
+	  "icon": "IconBook",
+	  "description": "Deutschsprachige Literatur und Klassiker für Offline-Nutzung.",
+	  "language": "de",
+	  "tiers": [
+		{
+		  "name": "Standard",
+		  "slug": "literature-standard",
+		  "description": "Deutsches Gutenberg-Projekt als Offline-ZIM.",
+		  "recommended": true,
+		  "resources": [
+			{
+			  "id": "gutenberg_de_all",
+			  "version": "2026-01",
+			  "title": "Gutenberg DE",
+			  "description": "Deutschsprachige Literatur aus dem Gutenberg-Projekt.",
+			  "url": "https://download.kiwix.org/zim/gutenberg/gutenberg_de_all_2026-01.zim",
+			  "size_mb": 0
+			}
+		  ]
+		}
+	  ]
+	}
   ]
 }
