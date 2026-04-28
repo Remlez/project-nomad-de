@@ -86,7 +86,7 @@ export class ZimService {
         params: {
           start: currentStart,
           count: KIWIX_PAGE_SIZE,
-          lang: 'eng',
+          lang: 'deu',
           ...(query ? { q: query } : {}),
         },
         responseType: 'text',
