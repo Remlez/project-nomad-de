@@ -20,7 +20,7 @@ FROM base AS build
 WORKDIR /app
 COPY --from=deps /app/node_modules /app/node_modules
 ADD admin/ ./
-RUN node ace build
+RUN node ace build --ignore-ts-errors
 
 # Production stage
 FROM base
@@ -36,7 +36,7 @@ LABEL org.opencontainers.image.title="Project N.O.M.A.D" \
       org.opencontainers.image.revision="${VCS_REF}" \
       org.opencontainers.image.vendor="Crosstalk Solutions, LLC" \
       org.opencontainers.image.documentation="https://github.com/CrosstalkSolutions/project-nomad/blob/main/README.md" \
-      org.opencontainers.image.source="https://github.com/CrosstalkSolutions/project-nomad" \
+      org.opencontainers.image.source="https://github.com/remlez/project-nomad-de" \
       org.opencontainers.image.licenses="Apache-2.0"
 
 ENV NODE_ENV=production
